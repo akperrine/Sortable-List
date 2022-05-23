@@ -1,0 +1,91 @@
+:root {
+  --background-color: rgb(244, 237, 237);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, rgb(10, 220, 216), rgb(25, 3, 81) 75%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  /* position: relative; */
+  /* top: auto; */
+  color: white;
+  font-size: 3rem;
+  /* margin-top: auto; */
+}
+.instructions {
+  /* position: relative; */
+  top: -5%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.draggable-list {
+  border: 1px solid black;
+  color: black;
+  list-style-type: none;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.draggable-list li {
+  /* position: relative;
+  top: -10%; */
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
+
+.draggable-list .number {
+  color: rgb(160, 155, 155);
+  border: 1px solid var(--background-color);
+  background-color: black;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 5.2rem;
+  width: 4.8rem;
+}
+
+.check {
+  background-color: var(--background-color);
+  border-radius: 20px;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.over {
+  background-color: rgb(95, 90, 90);
+}
